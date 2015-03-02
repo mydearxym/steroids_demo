@@ -5,19 +5,19 @@ module.exports =
   # See styling options for tabs and other native components in app/common/native-styles/ios.css or app/common/native-styles/android.css
   tabs: [
     {
-      title: "Index"
+      title: "首页"
       id: "index"
       location: "example#getting-started" # Supersonic module#view type navigation
     }
     {
-      title: "Settings"
+      title: "统计"
       id: "settings"
       location: "example#settings"
     }
     {
-      title: "Internet"
+      title: "控制"
       id: "internet"
-      location: "http://google.com" # URLs are supported!
+      location: "www.baidu.com" # URLs are supported!
     }
   ]
 
