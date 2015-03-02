@@ -14,11 +14,17 @@ module.exports =
       id: "settings"
       location: "example#settings"
     }
+
     {
-      title: "控制"
-      id: "internet"
-      location: "www.baidu.com" # URLs are supported!
+      title: "Geolocation"
+      id: "geolocation"
+      location: "geolocation#index"
     }
+#    {
+#      title: "控制"
+#      id: "internet"
+#      location: "www.baidu.com" # URLs are supported!
+#    }
   ]
 
   # rootView:
