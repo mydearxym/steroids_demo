@@ -1,13 +1,12 @@
-<div class="padding">
+<div class="padding" ng-controller="LearnMoreController">
 
   <super-navbar>
     <super-navbar-title>云洋监测</super-navbar-title>
     <super-navbar-button side="right">hehe</super-navbar-button>
   </super-navbar>
 
-  <h3>貌似有点爽啊</h3>
+  <h3>{{title}}</h3>
 
-  <p>Below, you can see our multi-page navigation in action. Tap on a button to move to a new view.</p>
 
   <super-navigate view-id="using-the-scanner">
     <button class="button button-block button-positive icon-left super-wand">Using the AppGyver Scanner</button>
@@ -17,8 +16,35 @@
     <button class="button button-block button-positive icon-left super-university">Learn more</button>
   </super-navigate>
 
-  <h2>Get in touch with us!</h2>
+  <div class="card padding">
+    <h4>用户登陆</h4>
+    <label class="item item-input">
+      <input type="text" ng-model="username" placeholder="用户名">
+    </label>
 
-  <p>Feel free to contact us at <a href="mailto:contact@appgyver.com">contact@appgyver.com</a>, we would love to get your feedback!</p>
+    <label class="item item-input">
+      <input type="text" ng-model="password" placeholder="用户密码">
+    </label>
+
+    {{username}}--{{password}}
+    <button ng-click="login()" class="button button-energized" style="float:right">
+      登陆
+    </button>
+
+    <button ng-click="AVTest()" class="button button-energized" style="float:right">
+      AV
+    </button>
+
+  </div>
+
+  <!--<div class="card padding">-->
+    <!--<h4>密码</h4>-->
+    <!--<label class="item item-input">-->
+      <!--<input type="text" ng-model="passwd">-->
+    <!--</label>-->
+  <!--</div>-->
+
+
+  <h2>Get in touch with us!</h2>
 
 </div>
