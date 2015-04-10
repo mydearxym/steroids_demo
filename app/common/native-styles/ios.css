@@ -5,14 +5,17 @@
 
 navigation-bar {
   /*background-color: #00B5FF;*/
-  background-color: #5db15d;
+  /*background-color: #025c9c; //#5db15d;*/
+  /*background-color: rgb(245, 240, 233);*/
+  background-color: #F7F4EF;
   color: #ffffff;
 }
 
 navigation-bar title {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #313131;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 navigation-bar button, navigation-bar back-bar-button {
