@@ -7,7 +7,6 @@ angular
 
     self.title = "貌似有点爽啊2"
 
-
     self.logmebtn = "LogMe"
 
     self.logme = function(){
@@ -20,6 +19,7 @@ angular
 
       var TestObject = AV.Object.extend("TestObject");
       var testObject = new TestObject();
+
       testObject.save({app: "iphone simulator"}, {
         success: function(object) {
           supersonic.logger.warn("LeanCloud works!");

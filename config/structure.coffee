@@ -10,8 +10,9 @@ module.exports =
     {
       title: "首页"
       id: "index"
-      location: "example#getting-started" # Supersonic module#view type navigation
+      location: "rsindex#index" # Supersonic module#view type navigation
     }
+
     {
       title: "统计"
       id: "settings"
