@@ -228,16 +228,16 @@
 
 
   .welcome.ng-hide-remove {
-    -webkit-animation: bounceInLeft 0.3s;
-    -moz-animation: bounceInLeft 0.3s;
-    -o-animation: bounceInLeft 0.3s;
-    animation: bounceInLeft 0.3s;
+    -webkit-animation: bounceInLeft 1s;
+    -moz-animation: bounceInLeft 1s;
+    -o-animation: bounceInLeft 1s;
+    animation: bounceInLeft 1s;
   }
   .welcome.ng-hide-add {
-    -webkit-animation: bounceOutRight 0.3s;
-    -moz-animation: bounceOutRight 0.3s;
-    -o-animation: bounceOutRight 0.3s;
-    animation: bounceOutRight 0.3s;
+    -webkit-animation: bounceOutRight 1s;
+    -moz-animation: bounceOutRight 1s;
+    -o-animation: bounceOutRight 1s;
+    animation: bounceOutRight 1s;
   }
 
 </style>
@@ -277,13 +277,14 @@
 
   <i class="icon ion-home"></i>
 
-  <button ng-click='isExpanded = !isExpanded'> fuck me </button>
+  <button class="button" ng-click='isExpanded = !isExpanded'> fuck me </button>
 
 
   <h1 ng-show="isExpanded" class="welcome">
     Hello 'non-bouncy' and fading Firefox animation!
   </h1>
 
+  <!--isExpanded: {{isExpanded}}-->
 
   <!--<div id="geoList">-->
 
