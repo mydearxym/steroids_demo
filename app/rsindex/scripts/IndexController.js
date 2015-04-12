@@ -1,10 +1,131 @@
 angular
   .module('rsindex')
-  .controller('IndexController', function ($scope, supersonic) {
+  .controller('IndexController', function ($scope, supersonic, $interval) {
     // Controller functionality here
     var self = $scope
 
-    self.items = [1,2,3,4,5]
+    self.welcomeBool = false;
+
+
+//    $interval(function() {
+//      self.welcomeBool = !self.welcomeBool;
+//    }, 1500);
+
+
+    self.provinceWithCity = [
+      {
+        province: "四川省",
+        cities: [
+          {
+            name:"成都市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+          {
+            name:"成都市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+          {
+            name:"成都市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+
+          {
+            name:"乐山市",
+            count:5
+          }
+        ]
+
+      },
+
+      {
+        province: "湖南省",
+        cities: [
+          {
+            name:"2jfi市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+          {
+            name:"2jfi市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+          {
+            name:"2jfi市",
+            count:4
+          },
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"绵阳市2",
+            count:3
+          },
+
+          {
+            name:"乐山市",
+            count:5
+          }
+        ]
+
+      }
+    ]
 
 
     self.btnClick = function (arg) {

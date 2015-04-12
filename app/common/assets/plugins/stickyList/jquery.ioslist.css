@@ -15,17 +15,25 @@
 }
 
 .ioslist-group-header, .ioslist-fake-header {
-    background: #B8C1C8;
-    border-bottom: 1px solid #989EA4;
-    border-top: 1px solid #717D85;
-    color: #FFF;
-    font: normal 18px/21px Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 2px 0 0 12px;
+    /*background: #B8C1C8;*/
+    background: #F7F4EF;
+    /*border-bottom: 1px solid #d28c2a;*/
+    /*border-top: 1px solid #717D85;*/
+    color: grey;
+    /*font: normal 18px/21px Helvetica, Arial, sans-serif;*/
+    font-size:large;
+    /*margin: 0;*/
+
+    padding-left:15px;
+    padding-top:10px;
+
+    /*padding-bottom:10px;*/
+    /*padding: 2px 0 0 12px;*/
+
     position: absolute;
-    text-shadow: 0 1px #646A6E;
-    -moz-text-shadow: 0 1px #646A6E;
-    -webkit-text-shadow: 0 1px #646A6E;
+    /*text-shadow: 0 1px #646A6E;*/
+    /*-moz-text-shadow: 0 1px #646A6E;*/
+    /*-webkit-text-shadow: 0 1px #646A6E;*/
 }
 
 .ioslist-group-header {
@@ -33,13 +41,21 @@
     min-height: 1px;
     top: 0;
     width:100%;
+
     /*width: 273px;*/
+}
+
+.ioslist-fake-header span {
+    float:right;
+}
+
+.ioslist-group-header span{
+    float:right;
 }
 
 .ioslist-fake-header {
     /*width: 273px;*/
     width:100%;
-
     z-index: 1000;
 }
 
@@ -54,7 +70,7 @@
 
 /* Demo Styling */
 
-#list1 {
+#geoList {
     font: normal 20px Helvetica, Arial, sans-serif;
     margin: 0;
     height: 300px;
@@ -69,10 +85,15 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    /*xym*/
+    margin-top:10px;
 }
 
 .ioslist li {
-    font: normal 20px/45px Helvetica, Arial, sans-serif;
+    /*font: normal 20px/45px Helvetica, Arial, sans-serif;*/
+    font-size:medium;
+
     margin: 0;
     padding: 0 0 0 12px;
     white-space: nowrap;

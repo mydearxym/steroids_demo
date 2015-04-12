@@ -17,7 +17,7 @@
   }
 
   .radar_wraper {
-    border-bottom:4px solid rgb(201, 201, 201);
+    border-bottom:4px solid rgb(201, 126, 70);
     position: relative;
     text-align: center;
     width:100%;
@@ -227,6 +227,19 @@
   }
 
 
+  .welcome.ng-hide-remove {
+    -webkit-animation: bounceInLeft 0.3s;
+    -moz-animation: bounceInLeft 0.3s;
+    -o-animation: bounceInLeft 0.3s;
+    animation: bounceInLeft 0.3s;
+  }
+  .welcome.ng-hide-add {
+    -webkit-animation: bounceOutRight 0.3s;
+    -moz-animation: bounceOutRight 0.3s;
+    -o-animation: bounceOutRight 0.3s;
+    animation: bounceOutRight 0.3s;
+  }
+
 </style>
 
 <div ng-controller="IndexController">
@@ -262,56 +275,25 @@
     </div>
   </div>
 
-  <!--<img src="/images/world_map.png"/>-->
-  <br>
-  <br>
+  <i class="icon ion-home"></i>
 
-  <div id="list1">
-    <div class="ioslist-group-container">
-      <div class="ioslist-group-header">boy</div>
-      <ul>
-        <li>Adam</li>
-        <li>Austin</li>
-        <li>Bernard</li>
-        <li>Charles</li>
-        <li>Damian</li>
-        <li>Dilan</li>
-      </ul>
-    </div>
-    <div class="ioslist-group-container">
-      <div class="ioslist-group-header">girl</div>
-      <ul>
-        <li>Agnetta</li>
-        <li>Anna</li>
-        <li>Brenda</li>
-        <li>Chandi</li>
-        <li>Emil</li>
-        <li>Erika</li>
-        <li>Samantha</li>
-      </ul>
-    </div>
-  </div>
-  <!--<script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>-->
-  <!--<script data-require="iOSList@*" data-semver="2.0.0" src="http://brianhadaway.github.io/iOSList/javascripts/jquery.ioslist.js"></script>-->
-
-  <script>
-    $(function(){
-      $("#list1").ioslist();
-    });
-  </script>
-
-  <ion-content scroll-event-interval="5"><!-- or <ion-scroll> -->
-    <article class="post" ng-repeat="post in posts track by post._id">
-      <h1 affix-within-container=".post">
-        {{post.title}}
-      </h1>
-      <main>
-        {{post.body}}
-      </main>
-    </article>
-  </ion-content>
+  <button ng-click='isExpanded = !isExpanded'> fuck me </button>
 
 
+  <h1 ng-show="isExpanded" class="welcome">
+    Hello 'non-bouncy' and fading Firefox animation!
+  </h1>
+
+
+  <!--<div id="geoList">-->
+
+    <!--<div class="ioslist-group-container" ng-repeat="pinfo in provinceWithCity">-->
+      <!--<div class="ioslist-group-header">{{pinfo.province}}<span style="float:right !important">22 / 21</span></div>-->
+      <!--<ul>-->
+        <!--<li ng-repeat="city in pinfo.cities">{{city.name}}</li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>-->
 
   <div class="button-bar" style="width:280px;">
     <div class="button-bar__item" ng-click="btnClick('one')">
@@ -384,14 +366,15 @@
 
     </ons-dialog>
   </ons-template>
-
-
-
-
-
 </div>
 
 
+
+<script>
+  jQuery(function(){
+    jQuery("#geoList").ioslist();
+  });
+</script>
 
 
 
